@@ -1,0 +1,17 @@
+= form_for(@user, :url => { :action => "update_password" } ) do |f|
+  h2 Password Settings
+  .field
+    = f.label :current_password
+    =link_to "Forgot your password?", new_user_password_path
+    br/
+    = f.password_field :current_password
+  .field
+    = f.label :password, "New password"
+    br/
+    = f.password_field :password, :autocomplete => "off"
+  .field
+    = f.label :password_confirmation, "Confirm password"
+    br/
+    = f.password_field :password_confirmation
+  .action_container
+    = f.submit "Save Changes"
