@@ -19,6 +19,7 @@ gem 'thin'
 gem 'slim'
 gem 'slim-rails'
 gem 'devise'
+gem 'omniauth-facebook'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
